@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17352a;
+    background: #f5fbf7;
+    line-height: 1.6;
+}
+
+
+/* ================= MENU ================= */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: white;
+
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+nav h2 {
+    color: #16834b;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #17352a;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #16834b;
+}
+
+
+/* ================= TRANG CHỦ ================= */
+
+#home {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    color: white;
+
+    background-image:
+    linear-gradient(
+        rgba(5, 65, 35, 0.65),
+        rgba(5, 65, 35, 0.65)
+    ),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2000&q=85");
+
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+
+#home p:first-child {
+    color: #d4f5df;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#home h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    margin: 25px 0;
+}
+
+#home p {
+    font-size: 19px;
+    max-width: 650px;
+}
+
+button {
+    border: none;
+
+    background: #16834b;
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-top: 20px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0c6338;
+    transform: translateY(-3px);
+}
+
+
+/* ================= CÁC SECTION ================= */
+
+section:not(#home) {
+    padding: 90px 8%;
+
+    text-align: center;
+}
+
+section h2 {
+    font-size: 38px;
+    color: #075b35;
+
+    margin-bottom: 15px;
+}
+
+section > p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+
+    color: #65756d;
+}
+
+
+/* ================= CARDS ================= */
+
+.cards {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background: white;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: #16834b;
+
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #66766e;
+}
+
+
+/* ================= HÀNH ĐỘNG ================= */
+
+#actions {
+    background: #eaf7ef;
+}
+
+
+/* ================= THỬ THÁCH ================= */
+
+#challenge {
+    background: white;
+}
+
+.challenge {
+    max-width: 600px;
+
+    margin: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.challenge label {
+    background: #f3faf5;
+
+    padding: 18px;
+
+    border-radius: 12px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    border: 1px solid #dcece2;
+}
+
+.challenge label:hover {
+    background: #e6f6eb;
+}
+
+.challenge input {
+    width: 18px;
+    height: 18px;
+
+    margin-right: 10px;
+
+    accent-color: #16834b;
+}
+
+
+/* ================= THAM GIA ================= */
+
+#commit {
+    background: #edf8f1;
+}
+
+#name {
+    width: min(500px, 90%);
+
+    padding: 15px;
+
+    border: 1px solid #cbded2;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+#name:focus {
+    border-color: #16834b;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #073b24;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h3 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #c5dfd0;
+
+    margin: 5px;
+}
+
+
+/* ================= ĐIỆN THOẠI ================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 42px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #home h1 {
+        font-size: 35px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+}@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#home h1 {
+    animation: fadeUp 1s ease-out;
+}
+
+#home p {
+    animation: fadeUp 1.2s ease-out;
+}
+
+#home button {
+    animation: fadeUp 1.4s ease-out;
+}/* THANH TIẾN ĐỘ SỐNG XANH */
+
+.progress-box {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #eaf7ef;
+    border-radius: 15px;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #075b35;
+}
+
+.progress-bar {
+    height: 14px;
+    background: #cfe5d7;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressFill {
+    width: 0%;
+    height: 100%;
+    background: #16834b;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.challenge label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.challenge label:has(input:checked) {
+    background: #dff5e6;
+    border-color: #16834b;
+}
+
+#resetChallenge {
+    margin-top: 25px;
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Future - Bảo vệ môi trường</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- THANH MENU -->
+    <nav>
+        <h2>🌱 Green Future</h2>
+
+        <div class="menu">
+            <a href="#home">Trang chủ</a>
+            <a href="#problem">Thực trạng</a>
+            <a href="#actions">Hành động</a>
+            <a href="#challenge">Thử thách</a>
+            <a href="#commit">Tham gia</a>
+        </div>
+    </nav>
+
+
+    <!-- TRANG CHỦ -->
+    <section id="home">
+
+        <p>🌍 CÙNG NHAU VÌ MỘT HÀNH TINH XANH</p>
+
+        <h1>
+            CHUNG TAY<br>
+            BẢO VỆ MÔI TRƯỜNG
+        </h1>
+
+        <p>
+            Một hành động nhỏ hôm nay
+            có thể tạo nên một thay đổi lớn cho ngày mai.
+        </p>
+
+        <button onclick="showMessage()">
+            🌱 Tôi muốn chung tay
+        </button>
+
+    </section>
+
+
+    <!-- THỰC TRẠNG -->
+    <section id="problem">
+
+        <h2>🌍 Trái Đất đang cần chúng ta</h2>
+
+        <p>
+            Môi trường là ngôi nhà chung của tất cả chúng ta.
+            Hãy cùng nhau bảo vệ hành tinh xanh.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💨 Ô nhiễm không khí</h3>
+                <p>
+                    Khói bụi và khí thải đang ảnh hưởng
+                    đến chất lượng không khí.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💧 Ô nhiễm nguồn nước</h3>
+                <p>
+                    Rác thải và nước thải gây ảnh hưởng
+                    đến nguồn nước.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🧴 Rác thải nhựa</h3>
+                <p>
+                    Nhựa dùng một lần đang gây áp lực
+                    lớn lên môi trường.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌡️ Biến đổi khí hậu</h3>
+                <p>
+                    Khí nhà kính góp phần làm thay đổi
+                    khí hậu toàn cầu.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HÀNH ĐỘNG -->
+    <section id="actions">
+
+        <h2>🌱 Chúng ta có thể làm gì?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>♻️ Phân loại rác</h3>
+                <p>
+                    Phân loại rác để tăng khả năng tái chế.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🛍️ Giảm sử dụng nhựa</h3>
+                <p>
+                    Hạn chế túi nilon và đồ nhựa dùng một lần.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💡 Tiết kiệm điện</h3>
+                <p>
+                    Tắt các thiết bị điện khi không sử dụng.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌳 Trồng cây</h3>
+                <p>
+                    Trồng và chăm sóc cây xanh.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- THỬ THÁCH -->
+    <section id="challenge">
+
+    <h2>🌱 Thử thách sống xanh</h2>
+
+    <p>
+        Hoàn thành từng hành động nhỏ để góp phần
+        bảo vệ hành tinh của chúng ta.
+    </p>
+
+    <div class="progress-box">
+        <div class="progress-info">
+            <span id="progressText">0/7 thử thách</span>
+            <span id="progressPercent">0%</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+    </div>
+
+    <div class="challenge">
+
+        <label>
+            <input type="checkbox" class="green-task">
+            ♻️ Phân loại rác
+        </label>
+
+        <label>
+            <input type="checkbox" class="green-task">
+            🧴 Hạn chế chai nhựa dùng một lần
+        </label>
+
+        <label>
+            <input type="checkbox" class="green-task">
+            💡 Tiết kiệm điện
+        </label>
+
+        <label>
+            <input type="checkbox" class="green-task">
+            🚰 Tiết kiệm nước
+        </label>
+
+        <label>
+            <input type="checkbox" class="green-task">
+            🌳 Chăm sóc cây xanh
+        </label>
+
+        <label>
+            <input type="checkbox" class="green-task">
+            🛍️ Sử dụng túi có thể tái sử dụng
+        </label>
+
+        <label>
+            <input type="checkbox" class="green-task">
+            🤝 Rủ một người cùng sống xanh
+        </label>
+
+    </div>
+
+    <button type="button" id="resetChallenge">
+        Làm lại thử thách
+    </button>
+
+</section>
+
+        <h2>🌱 Thử thách sống xanh</h2>
+
+        <p>
+            Hãy bắt đầu bằng những hành động nhỏ mỗi ngày.
+        </p>
+
+        <div class="challenge">
+
+            <label>
+                <input type="checkbox">
+                ♻️ Phân loại rác
+            </label>
+
+            <label>
+                <input type="checkbox">
+                🧴 Không sử dụng chai nhựa
+            </label>
+
+            <label>
+                <input type="checkbox">
+                💡 Tiết kiệm điện
+            </label>
+
+            <label>
+                <input type="checkbox">
+                🌳 Trồng một cây xanh
+            </label>
+
+        </div>
+
+    </section>
+
+
+    <!-- THAM GIA -->
+    <section id="commit">
+
+        <h2>💚 Cùng nhau hành động</h2>
+
+        <p>
+            Hãy để lại lời cam kết của bạn.
+        </p>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Nhập tên của bạn">
+
+        <br><br>
+
+        <button onclick="commit()">
+            Tôi cam kết 🌱
+        </button>
+
+    </section>
+
+
+    <!-- CHÂN TRANG -->
+    <footer>
+
+        <h3>🌱 Green Future</h3>
+
+        <p>
+            Chung tay vì một hành tinh xanh.
+        </p>
+
+        <p>
+            © 2026 Green Future
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
